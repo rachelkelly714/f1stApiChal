@@ -1,0 +1,22 @@
+ html{
+     background-image: url('01assets/pkmbgnd.jpg');
+     /* background-size: cover; */
+     background-size: contain;
+     background-size: auto;
+     background-color: rgb(11, 141, 247);
+ 
+ }
+
+ h1{
+     font-family: 'VT323', monospace;
+     text-align: center;
+     font-size: 60px;
+ }
+
+ #intro{
+     font-family: 'VT323', monospace;
+     font-size: 25px;
+     text-align: center;
+ }
+
+ 
