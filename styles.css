@@ -1,5 +1,5 @@
  html{
-     background-image: url('01assets/pkmbgnd.jpg');
+     background-image: url('assets/pkmbgnd.jpg');
      /* background-size: cover; */
      background-size: contain;
      background-size: auto;
@@ -19,4 +19,368 @@
      text-align: center;
  }
 
- 
+body{
+    height:100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.search-bar {
+    width: 100%;
+    height: 80%;
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'VT323', monospace;
+    
+    border-radius: 10px;
+    
+}
+
+#name-input {
+    font-family: 'VT323' , monospace;
+    font-size: 25px;
+    color: rgb(65, 3, 65);
+    text-align: center;
+}
+
+input {
+    height: 40px;
+    border-radius: 10px;
+    margin-right: 10px;
+    border: 4px solid grey;
+    
+}
+
+input:hover {
+    border-color:rgb(65, 3, 65);
+    box-shadow: 0 0 5px rgba(82, 19, 76, 0.2);
+}
+
+input:focus{
+    border-color: #4285f4;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2) inset;
+}
+
+/*Search-Btn*/
+
+.ball-container {
+    overflow: hidden;
+    width: 60px;
+    height: 60px;
+    border: 4px solid rgb(27, 27, 27);
+    border-radius: 50%;
+    position: relative;
+    animation: bounce 1.5s ease-in infinite;
+    animation-play-state: paused;
+    animation-timing-function: linear;
+
+}
+
+@keyframes bounce {
+    0%   { transform: scale(1,1)    translateY(0); }
+        10%  { transform: scale(1.1,.9) translateY(0); }
+        30%  { transform: scale(.9,1.1) translateY(-15px); }
+        50%  { transform: scale(1,1)    translateY(0); }
+        57%  { transform: scale(1,1)    translateY(-5px); }
+        64%  { transform: scale(1,1)    translateY(0); }
+        100% { transform: scale(1,1)    translateY(0); }
+        
+}
+
+.ball-container:hover {
+    cursor: pointer;
+    animation-play-state: running;
+}
+
+.upper-ball {
+    position: absolute;
+    width: 100%;
+    height: 42%;
+    background-color: rgb(156, 18, 156);
+
+}
+
+.bottom-ball {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 42%;
+    background-color: white;
+}
+
+.center-ball {
+    background-color: white;
+    width: 20%;
+    height: 20%;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.center-line {
+    background: black;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+h1{
+    font-family: 'VT323', monospace;
+    text-align: center;
+    font-size: 60px;
+}
+
+#intro{
+    font-family: 'VT323', monospace;
+    font-size: 25px;
+    text-align: center;
+}
+
+body{
+   height:100vh;
+   width: 100vw;
+   display: flex;
+   flex-direction: column;
+   justify-content: start;
+   align-items: center;
+}
+
+.search-bar {
+   width: 100%;
+   height: 80%;
+   justify-self: center;
+   align-self: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-family: 'VT323', monospace;
+   
+   border-radius: 10px;
+   
+}
+
+#name-input {
+   font-family: 'VT323' , monospace;
+   font-size: 25px;
+   color: rgb(65, 3, 65);
+   text-align: center;
+}
+
+input {
+   height: 40px;
+   border-radius: 10px;
+   margin-right: 10px;
+   border: 4px solid grey;
+   
+}
+
+input:hover {
+   border-color:rgb(65, 3, 65);
+   box-shadow: 0 0 5px rgba(82, 19, 76, 0.2);
+}
+
+input:focus{
+   border-color: #4285f4;
+   box-shadow: 0 0 10px rgba(0, 0, 0, .2) inset;
+}
+
+/*Search-Btn*/
+
+.ball-container {
+   overflow: hidden;
+   width: 60px;
+   height: 60px;
+   border: 4px solid rgb(27, 27, 27);
+   border-radius: 50%;
+   position: relative;
+   animation: bounce 1.5s ease-in infinite;
+   animation-play-state: paused;
+   animation-timing-function: linear;
+
+}
+
+@keyframes bounce {
+   0%   { transform: scale(1,1)    translateY(0); }
+       10%  { transform: scale(1.1,.9) translateY(0); }
+       30%  { transform: scale(.9,1.1) translateY(-15px); }
+       50%  { transform: scale(1,1)    translateY(0); }
+       57%  { transform: scale(1,1)    translateY(-5px); }
+       64%  { transform: scale(1,1)    translateY(0); }
+       100% { transform: scale(1,1)    translateY(0); }
+       
+}
+
+.ball-container:hover {
+   cursor: pointer;
+   animation-play-state: running;
+}
+
+.upper-ball {
+   position: absolute;
+   width: 100%;
+   height: 42%;
+   background-color: rgb(156, 18, 156);
+
+}
+
+.bottom-ball {
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   height: 42%;
+   background-color: white;
+}
+
+.center-ball {
+   background-color: white;
+   width: 20%;
+   height: 20%;
+   border: 2px solid black;
+   border-radius: 50%;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.center-line {
+   background: black;
+   height: 100%;
+   width: 100%;
+}
+
+/* ~~Poke'dex~~
+
+
+/*Left side*/
+
+.left-side-panel {
+    width: 300px;
+    height: 380px;
+    border: solid black 2px;
+    border-radius: 5px;
+    background-color: rgb(252, 140, 158);
+} 
+
+.left-side-display-screen {
+    position: relative; 
+    width: 80%; 
+    height: 40%; 
+    margin: auto; 
+    margin-top: 12%; 
+    background: white; 
+    border-radius: 5px;
+    border: solid grey 2px;
+}
+
+.text-info-box {
+    width: 50%;
+    height: 30%; 
+    margin: auto;
+    margin-top: 5%;
+    background: rgba(95, 95, 95, 0.178);
+    border-radius: 5px;
+    border: solid gray 2px;
+
+}
+
+.height {
+    font-family: 'VT323', monospace; 
+    font-size: 20px;
+    position: relative;
+    margin: auto;
+}
+
+.weight {
+    font-family: 'VT323', monospace; 
+    font-size: 20px;
+    position: relative;
+}
+
+.type {
+    font-family: 'VT323', monospace; 
+    font-size: 20px;
+    position: relative; 
+    margin-bottom: auto;
+}
+
+.pokename-box{
+    width: 55%;
+    height:5%;
+    margin: auto;
+    margin-top: 5%;
+    border-radius: 5px;
+    border: solid gray 2px;
+    background: white;
+
+}
+
+#poke-text {
+    font-family: 'VT323', monospace;
+    font-size: 15px;
+}
+
+.right-button {
+    width: 0;
+    height:0;
+    border-top: 25px solid transparent;
+    border-left: 50px solid rgb(99, 97, 97);
+    border-bottom: 25px solid transparent;
+    margin-right: 190px;
+    right: -245px; 
+    top: -45px;
+    position: relative;
+    
+   
+
+    
+
+}
+
+
+
+.left-button {
+
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-right: 50px solid rgb(99, 97, 97);
+    border-bottom: 25px solid transparent;
+    left: 230px;
+    position: relative;
+    margin-left: -227px;
+    top: -95px;
+
+    }
+
+    .het {
+        font-family: 'VT323' , monospace;
+        font-size: 20px;
+    }
+
+    .wht {
+        font-family: 'VT323' , monospace;
+        font-size: 20px;
+    }
+    
+    .tpe {
+        font-family: 'VT323' , monospace;
+        font-size: 20px;
+    }
+
+    .poke-mon-img{
+        height: 165px;
+        position: relative;
+        margin-bottom: 100px;
+        margin-right: 200px;
+    }
