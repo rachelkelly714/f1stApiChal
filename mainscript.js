@@ -18,7 +18,7 @@ const leftBtn = document.querySelector('.left-button');
 // console.log(rightBtn);
 
 /* ~~~~~~~~~~ */
-fetch('https://pokeapi.co/api/v2/pokemon/30') 
+fetch('https://pokeapi.co/api/v2/pokemon/50') 
 .then(res => res.json())
 .then(data => {
     //console.log(data);
