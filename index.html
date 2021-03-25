@@ -24,15 +24,21 @@
 <p id="intro">They say knowledge is power, and if you want to 'catch them all' you will need all the knowledge you can get! Below is a pokedex to get you started.</p>
 
 <div class="search-bar">
-  <input id="name-input" type="text" placeholder="Poke'mon Name or #"> 
+  <form type="submit">
 
-  <div id="search-button" class="ball-container">
-    <div class="upper-ball"></div>
-    <div class="bottom-ball"></div>
-    <div class="center-ball"></div>
-    <div class="center-line"></div>
-  </div>
+    <input id="name-input" type="text" placeholder="Poke'mon Name or #"> 
+  
+    <button>
+      <div type='submit' id="search-button" class="ball-container">
+      <div class="upper-ball"></div>
+      <div class="bottom-ball"></div>
+      <div class="center-ball"></div>
+      <div class="center-line"></div>
+      </div>
+    </button>
+  </form>
 </div>
+
 
 <div id="pokedex">
 
@@ -63,8 +69,9 @@
 </div>
 
 <div class= "buttons">
-  <div class= "right-button"></div>
-  <div class="left-button"></div>
+
+  <div class= "right-button" onclick=rightFunction()></div>
+  <div class="left-button" onclick=leftFunction()></div>
   
   <script src='mainscript.js'></script>
 </div>
